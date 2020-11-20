@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F78DBED-6B22-443A-BED8-3E1F3A174AB3}</ProjectGuid>
+    <Keyword>QtVS_v303</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\C++\698SP\698SP VS\QtWidgetsApplication1\QtWidgetsApplication1\Debug\uic;D:\Qt5.13x86\Tools\mingw730_32\include;E:\C++\698SP\698SP VS\QtWidgetsApplication1\QtWidgetsApplication1\BasicExcel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\C++\698SP\698SP VS\QtWidgetsApplication1\QtWidgetsApplication1\Release\uic;D:\Qt5.13x86\Tools\mingw730_32\include;E:\C++\698SP\698SP VS\QtWidgetsApplication1\QtWidgetsApplication1\BasicExcel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>msvc2017</QtInstall>
+    <QtModules>core;xml;sql;network;gui;uitools;widgets;serialport</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>msvc2017</QtInstall>
+    <QtModules>core;xml;sql;network;gui;uitools;widgets;serialport</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddMeter.cpp" />
+    <ClCompile Include="Analysis.cpp" />
+    <ClCompile Include="BasicExcel\BasicExcel.cpp" />
+    <ClCompile Include="Check.cpp" />
+    <ClCompile Include="CollectionMonitoringClassObject.cpp" />
+    <ClCompile Include="Comm.cpp" />
+    <ClCompile Include="Custom_APDU.cpp" />
+    <ClCompile Include="MessageCompose.cpp" />
+    <ClCompile Include="MeterArchives.cpp" />
+    <ClCompile Include="qrc_logo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SaveLog.cpp" />
+    <ClCompile Include="serial.cpp" />
+    <ClCompile Include="SpecialFunc.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="_4_Parametric_variable.cpp" />
+    <QtRcc Include="Qt698sp.qrc" />
+    <QtUic Include="AddMeter.ui" />
+    <QtUic Include="Analysis.ui" />
+    <QtUic Include="Check.ui" />
+    <QtUic Include="CollectionMonitoringClassObject.ui" />
+    <QtUic Include="Custom_APDU.ui" />
+    <QtUic Include="MeterArchives.ui" />
+    <QtUic Include="Qt698sp.ui" />
+    <QtMoc Include="Qt698sp.h" />
+    <ClCompile Include="Qt698sp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="ReadData.ui" />
+    <QtUic Include="serial.ui" />
+    <QtUic Include="Special.ui" />
+    <QtUic Include="UI_MessageCompose.ui" />
+    <QtUic Include="_4_Parametric_variable.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="_4_Parametric_variable.h" />
+    <QtMoc Include="MeterArchives.h" />
+    <QtMoc Include="AddMeter.h" />
+    <QtMoc Include="Analysis.h" />
+    <ClInclude Include="BasicExcel\BasicExcel.h" />
+    <QtMoc Include="Check.h" />
+    <QtMoc Include="CollectionMonitoringClassObject.h" />
+    <QtMoc Include="Custom_APDU.h" />
+    <ClInclude Include="Debug\uic\ui_AddMeter.h" />
+    <ClInclude Include="Debug\uic\ui_Analysis.h" />
+    <ClInclude Include="Debug\uic\ui_Check.h" />
+    <ClInclude Include="Debug\uic\ui_CollectionMonitoringClassObject.h" />
+    <ClInclude Include="Debug\uic\ui_Custom_APDU.h" />
+    <ClInclude Include="Debug\uic\ui_MeterArchives.h" />
+    <ClInclude Include="Debug\uic\ui_Qt698sp.h" />
+    <QtMoc Include="MessageCompose.h" />
+    <ClInclude Include="Debug\uic\ui_ReadData.h" />
+    <ClInclude Include="Debug\uic\ui_serial.h" />
+    <ClInclude Include="Debug\uic\ui_Special.h" />
+    <ClInclude Include="Debug\uic\ui_UI_MessageCompose.h" />
+    <ClInclude Include="Debug\uic\ui__4_Parametric_variable.h" />
+    <ClInclude Include="resource.h" />
+    <QtMoc Include="SaveLog.h" />
+    <QtMoc Include="serial.h" />
+    <QtMoc Include="SpecialFunc.h" />
+    <ClInclude Include="tinyxml2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QtWidgetsApplication1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

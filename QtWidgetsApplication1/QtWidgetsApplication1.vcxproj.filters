@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="uic">
+      <UniqueIdentifier>{f38b9d43-9df3-44d2-865a-d5027894ae1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BasicExcel">
+      <UniqueIdentifier>{d1ef0241-86f6-4503-86cf-f96598b1f9c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Qt698sp.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="Qt698sp.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtMoc Include="Qt698sp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="Qt698sp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicExcel\BasicExcel.cpp">
+      <Filter>BasicExcel</Filter>
+    </ClCompile>
+    <ClCompile Include="Analysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeterArchives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="_4_Parametric_variable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddMeter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Check.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectionMonitoringClassObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom_APDU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageCompose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qrc_logo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="serial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicExcel\BasicExcel.h">
+      <Filter>BasicExcel</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_Qt698sp.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui__4_Parametric_variable.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_AddMeter.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_Analysis.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_Check.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_CollectionMonitoringClassObject.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_Custom_APDU.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_MeterArchives.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_ReadData.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_serial.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_Special.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug\uic\ui_UI_MessageCompose.h">
+      <Filter>uic</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QtWidgetsApplication1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MeterArchives.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="AddMeter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="_4_Parametric_variable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Analysis.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Check.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CollectionMonitoringClassObject.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Custom_APDU.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MessageCompose.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SaveLog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="serial.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SpecialFunc.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="_4_Parametric_variable.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="AddMeter.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="Analysis.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="Check.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="CollectionMonitoringClassObject.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="Custom_APDU.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="MeterArchives.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="ReadData.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="serial.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="Special.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtUic Include="UI_MessageCompose.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>
