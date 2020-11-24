@@ -199,4 +199,6 @@ public slots:
 	void op_analy();
 
 	void copy_message();
+
+	void set_mac();
 };

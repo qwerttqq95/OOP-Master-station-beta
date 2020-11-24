@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/main">
+        <file>ooopic_1565853136.ico</file>
+        <file>ico/Computer.ico</file>
+        <file>ico/Customize.ico</file>
+        <file>ico/Dashboard.ico</file>
+        <file>ico/Document.ico</file>
+        <file>ico/Desktop.ico</file>
+        <file>ico/Sites.ico</file>
+        <file>ico/Smart Folder.ico</file>
+    </qresource>
+</RCC>
