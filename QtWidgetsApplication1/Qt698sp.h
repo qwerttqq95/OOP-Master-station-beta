@@ -188,8 +188,6 @@ public slots:
 
 	void function();
 
-	void open_attach();
-
 	void clear_view();
 
 	void add_change_event(QString);
