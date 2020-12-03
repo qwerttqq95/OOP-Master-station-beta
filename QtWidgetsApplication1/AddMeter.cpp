@@ -8,6 +8,7 @@ AddMeters::AddMeters(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(ok()));
+    setAttribute(Qt::WA_QuitOnClose, false);
 }
 
 void AddMeters::ok()

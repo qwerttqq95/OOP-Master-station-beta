@@ -13,18 +13,18 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{4F78DBED-6B22-443A-BED8-3E1F3A174AB3}</ProjectGuid>
     <Keyword>QtVS_v303</Keyword>
-    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0.17763.0</WindowsTargetPlatformVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -108,6 +108,7 @@
     <ClCompile Include="CollectionMonitoringClassObject.cpp" />
     <ClCompile Include="Comm.cpp" />
     <ClCompile Include="Custom_APDU.cpp" />
+    <ClCompile Include="Event.cpp" />
     <ClCompile Include="MessageCompose.cpp" />
     <ClCompile Include="MeterArchives.cpp" />
     <ClCompile Include="qrc_logo.cpp">
@@ -127,6 +128,7 @@
     <QtUic Include="Check.ui" />
     <QtUic Include="CollectionMonitoringClassObject.ui" />
     <QtUic Include="Custom_APDU.ui" />
+    <QtUic Include="Event.ui" />
     <QtUic Include="MeterArchives.ui" />
     <QtUic Include="Qt698sp.ui" />
     <QtMoc Include="Qt698sp.h" />
@@ -152,6 +154,7 @@
     <ClInclude Include="Debug\uic\ui_Check.h" />
     <ClInclude Include="Debug\uic\ui_CollectionMonitoringClassObject.h" />
     <ClInclude Include="Debug\uic\ui_Custom_APDU.h" />
+    <ClInclude Include="Debug\uic\ui_Event.h" />
     <ClInclude Include="Debug\uic\ui_MeterArchives.h" />
     <ClInclude Include="Debug\uic\ui_Qt698sp.h" />
     <QtMoc Include="MessageCompose.h" />
@@ -160,6 +163,7 @@
     <ClInclude Include="Debug\uic\ui_Special.h" />
     <ClInclude Include="Debug\uic\ui_UI_MessageCompose.h" />
     <ClInclude Include="Debug\uic\ui__4_Parametric_variable.h" />
+    <QtMoc Include="Event.h" />
     <ClInclude Include="resource.h" />
     <QtMoc Include="SaveLog.h" />
     <QtMoc Include="serial.h" />
@@ -171,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ooopic_1565853136.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -17,7 +17,7 @@
    <string>698 Special</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="cmake-build-debug/logo.qrc">
+   <iconset resource="logo.qrc">
     <normaloff>:/main/ooopic_1565853136.ico</normaloff>:/main/ooopic_1565853136.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -306,6 +306,13 @@
       </widget>
      </widget>
     </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>*主站通讯日志存在根目录的LOG文件中,不会自动清空;</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -465,7 +472,7 @@
    </widget>
    <widget class="QMenu" name="menu_9">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="title">
      <string>线上</string>
@@ -487,7 +494,6 @@
    <addaction name="menu_9"/>
    <addaction name="menu"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <action name="action">
    <property name="text">
     <string>广播读地址</string>
@@ -527,10 +533,10 @@
   </action>
   <action name="actionC">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="text">
-    <string>报文解析</string>
+    <string>批量配置事件</string>
    </property>
   </action>
   <action name="actionG">
@@ -790,6 +796,9 @@
    </property>
   </action>
   <action name="actiononline">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>测试</string>
    </property>
@@ -818,7 +827,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="cmake-build-debug/logo.qrc"/>
+  <include location="logo.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -24,6 +24,7 @@ public:
     bool run_flag;
     bool internet_or_serial;
     SOCKET sockConn;
+    SOCKET sockSrv;
     tinyxml2::XMLDocument doc;
     tinyxml2::XMLElement *root;
     QString temp;
@@ -59,7 +60,7 @@ signals:
 
     void send_message(QList<QString>);
 
-    void receive_message(QString);
+    void receive_message(QList<QString>);
 
     void open_fail_message();
 

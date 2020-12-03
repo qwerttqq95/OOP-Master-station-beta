@@ -34,6 +34,7 @@ Check::Check(QWidget *parent)
             SLOT(open_exist(QString)));
     connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(send_archeive()));
     connect(ui->pushButton_6, SIGNAL(clicked()), this, SLOT(stop()));
+    setAttribute(Qt::WA_QuitOnClose, false);
 }
 
 void Check::send_archeive()
@@ -78,7 +79,7 @@ void Check::send_archeive()
                 } else
                 {
                     QString add = re_rever_add();
-                    emit send_message({BuildMessage(message[1].remove(" "), add, "43"), message[0]});
+                    emit send_message({BuildMessage(message[1].remove(" "), add, "43"), message[0],"send"});
                     QEventLoop eventloop;
                     QTimer::singleShot(3000, &eventloop, SLOT(quit()));
                     eventloop.exec();

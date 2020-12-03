@@ -20,6 +20,8 @@
 #include "Custom_APDU.h"
 #include <time.h>
 #include <fstream>
+#include "Event.h"
+
 #pragma execution_character_set("utf-8")
 #define DATA_NULL 0
 #define DATA_ARRAY 1
@@ -69,18 +71,20 @@ class Qt698sp : public QMainWindow
 public:
 	int current = 0;
 	int times = 0;
+
 	QSqlDatabase database;
 
-	QMdiSubWindow *Custom_point;
-	QMdiSubWindow *MeterArchive_point;
-	QMdiSubWindow *Parametric_variable_point;
-	QMdiSubWindow *CollectionMonitoring_point;
-	QMdiSubWindow *SpecialFunc_point;
+	QMdiSubWindow* Custom_point;
+	QMdiSubWindow* MeterArchive_point;
+	QMdiSubWindow* Parametric_variable_point;
+	QMdiSubWindow* CollectionMonitoring_point;
+	QMdiSubWindow* SpecialFunc_point;
+	QMdiSubWindow* HanPu;
 
 	QString DARType(int);
-	Qt698sp(QWidget *parent = Q_NULLPTR);
+	Qt698sp(QWidget* parent = Q_NULLPTR);
 
-	void closeEvent(QCloseEvent *event);
+	void closeEvent(QCloseEvent* event);
 
 	QString analysis(QString a);
 
@@ -138,16 +142,18 @@ public:
 	} ReportNotificationList;
 
 private:
-	SaveLog *logging;
-	Serial *serial;
-	Custom_APDU *Custom;
-	MeterArchives *MeterArchive;
-	Check *check;
-	Analysis *analy;
-	CollectionMonitoringClass *CollectionMonitoring;
-	_4_Parametric_variable *Parametric_variable;
-	SpecialFuncs *specialfunc;
-	Ui::MainWindow *ui;
+
+	SaveLog* logging;
+	Serial* serial;
+	Custom_APDU* Custom;
+	MeterArchives* MeterArchive;
+	Check* check;
+	Analysis* analy;
+	Event* event;
+	CollectionMonitoringClass* CollectionMonitoring;
+	_4_Parametric_variable* Parametric_variable;
+	SpecialFuncs* specialfunc;
+	Ui::MainWindow* ui;
 signals:
 
 	void send_analysis(QString);
@@ -164,9 +170,11 @@ public slots:
 
 	void move_Cursor();
 
-	void show_message_send(QList<QString>);
+	//void show_message_send(QList<QString>);
 
-	void show_message_receive(QString);
+	//void show_message_receive(QString);
+
+	void show_message_SandR(QList<QString>);
 
 	void set_ip();
 
@@ -188,17 +196,17 @@ public slots:
 
 	void function();
 
-	void open_attach();
-
 	void clear_view();
 
 	void add_change_event(QString);
 
-	void double_click_analysis(const QModelIndex &index);
+	void double_click_analysis(const QModelIndex& index);
 
 	void op_analy();
 
 	void copy_message();
 
 	void set_mac();
+
+	void set_event();
 };

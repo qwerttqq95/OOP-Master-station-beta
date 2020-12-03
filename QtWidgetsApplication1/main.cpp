@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
 	qRegisterMetaType<QList<QString> >("QList<QString>");
     QApplication a(argc, argv);
     Qt698sp w;
+    w.setAttribute(Qt::WA_QuitOnClose,true);
     w.show();
     return a.exec();
 }

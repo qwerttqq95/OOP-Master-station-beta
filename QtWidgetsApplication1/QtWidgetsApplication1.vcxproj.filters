@@ -92,6 +92,9 @@
     <ClCompile Include="tinyxml2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -139,6 +142,9 @@
     <ClInclude Include="tinyxml2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Debug\uic\ui_Event.h">
+      <Filter>uic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="QtWidgetsApplication1.rc">
@@ -179,6 +185,9 @@
     <QtMoc Include="SpecialFunc.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="Event.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="_4_Parametric_variable.ui">
@@ -214,8 +223,16 @@
     <QtUic Include="UI_MessageCompose.ui">
       <Filter>Resource Files</Filter>
     </QtUic>
+    <QtUic Include="Event.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ooopic_1565853136.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
